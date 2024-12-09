@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     
     validation_data_path = str(sys.argv[1])
-    trained_model_path = "s3://wineprecdit/trainedmodel"
+    trained_model_path = "s3://predofwine/trainedmodel"
 
     
     raw_data_frame = (spark_session.read
