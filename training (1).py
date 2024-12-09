@@ -25,8 +25,8 @@ if __name__ == "__main__":
     spark_session._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
 
 
-    training_data_path = "s3://wineprecdit/TrainingDataset.csv"
-    model_output_path = "s3://wineprecdit/trainedmodel"
+    training_data_path = "s3://predofwine/TrainingDataset.csv"
+    model_output_path = "s3://predofwine/trainedmodel"
 
     print(f"Read the training CSV file from {training_data_path}")
     raw_data_frame = (spark_session.read
